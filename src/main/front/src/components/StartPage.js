@@ -1,0 +1,25 @@
+import Survey from './Survey';
+import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+
+
+function StartPage() {
+    return (
+        <div className="survey text-center">
+            <div className="progress-div"></div>
+            <div className="content-div">
+                <h1>로고 만들기를 시작해 보세요!</h1>
+                <span className="description-span">질문에 답 해보세요, 브랜드의 특징이 잘 살려진 로고 디자인을 선물해 드릴게요 😊 !</span>
+            </div>
+            <div className="button-div">
+                <Link to={"/Survey"}>
+                    <Button className="common-button f-right" variant="contained" color="pupleblue">START</Button>
+                </Link>
+            </div>
+        </div>
+    )
+
+}
+export default StartPage;

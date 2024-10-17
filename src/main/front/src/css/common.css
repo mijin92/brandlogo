@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg_blue { background:repeating-linear-gradient(45deg, #f6f6f6, #ffffff 150px, #c5e4fa 0, #d2deff 20px);
+    position: fixed; /* 배경 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 배경을 뒤로 보내기 */}
+
+.logo-div > img { position: absolute; width: 150px; top: 30px; left: 30px; }
+
+.parent {
+    /*display: flex;
+    height: 100dvh;*/
+    position: relative;
+    width: 100%;
+    height: 100%; /* 고정된 높이 */
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+.child {
+   /* align-content: center;
+    text-align: center;
+    width: 100%;*/
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Flexbox로 자식 요소 중앙 정렬 가능 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.common-button {
+    width: 25%;
+    height: 100%;
+    font-size: 18px !important;
+    border-radius: 56px !important;
+}
+
+.back-button {
+    background-color: #fff !important;
+    border: 1px solid #4A3AFF !important;
+    color: #4A3AFF !important;
+}
+
+.progress-div {
+    height: 15%;
+}
+
+.title-div {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content-div {
+    height: 70%;
+    align-content: center;
+    border-top : 1px solid #d9dbe9;
+}
+
+.button-div {
+    width: 100%;
+    height: 15%;
+}
+
+.survey {
+    background: rgba(255, 255, 255, 0.7);
+    width: 45%;
+    height: 50%;
+    margin: auto;
+    text-align: left;
+    border-radius: 34px;
+    border: 1px solid #f3f3f3;
+    box-shadow:  1px 0px 5px 5px #fafafa;
+    padding: 30px
+}
+
+.description-span {
+    color: #6F6C90;
+    font-size: 16px;
+}
+
+
+.MuiStepLabel-iconContainer {
+    padding-right: 0px !important;
+}
+
+.MuiStepConnector-line {
+    border : 3px solid #EFF0F6 !important;
+    border-radius: 3px;
+}
+
+.MuiStepIcon-root {
+    color: #EFF0F6 !important;
+}
+
+.Mui-active, .Mui-completed {
+    color: #4A3AFF !important;
+}
+
+.MuiStepIcon-text {
+    fill: #6F6C90 !important;
+}
+
+.Mui-active>.MuiStepIcon-text, .Mui-completed>.MuiStepIcon-text {
+    fill: #fff !important;
+}
+
+.Mui-active>.MuiStepConnector-line, .Mui-completed>.MuiStepConnector-line {
+    border : 3px solid #4A3AFF !important;
+    border-radius: 3px;
+}
+
+.MuiBox-root {
+    padding-top: 0px !important;
+    height: 100%
+}
+
+.MuiTypography-root {
+    margin-bottom: 5px !important;
+}
+
+.common-input {
+    width: 95%;
+    height: 50px;
+    border-radius: 34px;
+    border: 1px solid #f3f3f3;
+    box-shadow:  1px 0px 5px 5px #fafafa;
+    padding-left: 5%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.common-text {
+    width: 90%;
+    border-radius: 34px;
+    border: 1px solid #f3f3f3;
+    box-shadow:  1px 0px 5px 5px #fafafa;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* styles.css */
+/*.fade-enter {
+    opacity: 0;
+    transform: scale(2.5);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+} */
+.slide-enter {
+    opacity: 0;
+    transform: translateX(100%); /* 오른쪽에서 들어오기 */
+}
+
+.slide-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 300ms, transform 300ms; /* 애니메이션 속성 */
+}
+
+.slide-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.slide-exit-active {
+    opacity: 0;
+    transform: translateX(-100%); /* 왼쪽으로 나가기 */
+    transition: opacity 300ms, transform 300ms; /* 애니메이션 속성 */
+}
+
+.p-8 {
+    padding: 8px
+}
+
+.p-lr-8 {
+    padding: 0 8px
+}
+
+.m-8 {
+    margin: 8px
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.surveyBt {
+    height: 40px;
+    margin-top: 15px !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.f-right {
+    float: right !important;
+}
